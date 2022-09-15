@@ -10,32 +10,38 @@
 	</head>
 	<body>
 
-		<header >
+		<header>
 			<nav class="navbar">
 				<div class="container">
-					<a href="#" class="nav-branding">fR</a>
+				<a href="#" class="nav-branding">fR</a>
 
-					<ul class="nav-menu">
-						<li class="nav-item">
-							<a href="#" class="nav-link">Home</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">About Me</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">Contact</a>
-						</li>
-					</ul>
-					<div class="navbutton">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</div>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Contact</a>
+					</li>
+				</ul>
+				<div class="navbutton">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
 				</div>
+			</div>
 			</nav>
 		</header>
 
-		<div class="AboutMe"> 
+		<div class="home"> 
 			<div class="container">
 				<p>
 					Paragraphs are the building blocks of papers. Many 
@@ -159,6 +165,8 @@
 					navbar.classList.top = "-71px";
 				}else{
 					navbar.style.top = "0";
+					navMenu.classList.remove("active");
+					navbutton.classList.remove("active");
 				}
 
 				lastScrollTop = scrollTop;
