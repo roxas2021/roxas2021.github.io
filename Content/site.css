@@ -71,11 +71,6 @@ header {
     display: none;
  }
 
-.AboutMe {
-    height: 100vh;
-    background-color:#F0F8FF;
-}
-
 section{
     padding: 30px 10%;
 }
@@ -89,6 +84,10 @@ section{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap: 4rem;
+    background: url('../Images/bg-1.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home-text h1 {
@@ -191,4 +190,120 @@ header.sticky {
     .navlist.active {
         top: 100%
     }
+    
+}
+
+.AboutMe {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+    background: url('../Images/bg-2.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Skills {
+    background: url('../Images/bg-1.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skill-header {
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.skill-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+}
+
+.skill-box {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-box:hover > .skill-title::after, .skill-box:hover > .skill-title::before {
+    width: 35px;
+}
+
+.skill-box:hover .img{
+    transform: translateY(-10px);
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+    transition: .5s;
+}
+
+.skill-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2ecc71;
+    transition: .5s;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 150px 0 0 150px;
+}
+
+.skill-title h3 {
+    font-size: 20px;
+    color: black;
+    margin: 0.5rem;
+}
+
+.skill-img {
+    border-radius: 50%;
+    width: 100px;
+    z-index: 2;
 }
