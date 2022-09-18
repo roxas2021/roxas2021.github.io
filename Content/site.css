@@ -190,8 +190,9 @@ header.sticky {
     .navlist.active {
         top: 100%
     }
-    
+
 }
+
 
 .AboutMe {
     width: 100%;
@@ -306,4 +307,34 @@ header.sticky {
     border-radius: 50%;
     width: 100px;
     z-index: 2;
+}
+
+
+.project {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background: url('../Images/bg-1.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.proj_header {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card img {
+    height: 400px;
 }
