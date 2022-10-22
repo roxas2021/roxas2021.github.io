@@ -193,20 +193,6 @@ header.sticky {
 
 }
 
-
-/* .AboutMe {
-    /* width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center; */
-    /* grid-gap: 4rem;
-    background: url('../Images/bg-2.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-} */
-
 .Skills {
     background: url('../Images/bg-1.jfif');
     background-size: cover;
