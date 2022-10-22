@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Lato', sans-serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -194,18 +194,18 @@ header.sticky {
 }
 
 
-.AboutMe {
-    width: 100%;
+/* .AboutMe {
+    /* width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    grid-gap: 4rem;
+    align-items: center; */
+    /* grid-gap: 4rem;
     background: url('../Images/bg-2.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
+    background-repeat: no-repeat; */
+} */
 
 .Skills {
     background: url('../Images/bg-1.jfif');
@@ -337,4 +337,45 @@ header.sticky {
 
 .card img {
     height: 400px;
+}
+
+
+
+.contact_info
+{
+    width: 100%;
+    padding-top: 70px;
+}
+.contact_info_item
+{
+    width: 350px;
+    height: 60px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    padding-left: 32px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+}
+.contact_info_image
+{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+.contact_info_image img
+{
+    max-width: 100%;
+}
+.contact_info_content
+{
+    padding-left: 17px;
+}
+.contact_info_title
+{
+    font-weight: 500;
+}
+.contact_info_text
+{
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
 }
