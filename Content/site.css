@@ -19,8 +19,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
-    padding: 3px 8%;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 10px;
     transition:  .3s;
 
 }
@@ -139,6 +140,7 @@ section{
 header.sticky {
     padding: 3px 8%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    background: #ffff;
 }
 
 @media (max-width: 800px) {
@@ -150,6 +152,11 @@ header.sticky {
     .home-text {
         padding-top: 80px;
 
+    }
+
+    .home-img img {
+        width: 100%;
+        margin: 0;
     }
 
     #menu-icon {
@@ -195,77 +202,9 @@ header.sticky {
     .skills .img {
         display: none;
     }
-    
+        
 }
 
-.Skills {
-    background: url('../Images/bg-1.jfif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.skill-header {
-    padding: 1rem;
-    text-align: center;
-    position: relative;
-}
-
-.skill-header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 100px;
-    background-color: #2ecc71;
-}
-
-.skill-box {
-    color: #ddd;
-    cursor: pointer;
-}
-
-.skill-box:hover > .skill-title::after, .skill-box:hover > .skill-title::before {
-    width: 35px;
-}
-
-.skill-box:hover .img{
-    transform: translateY(-10px);
-}
-
-.skill-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.skill-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    width: 35px;
-    height: 4px;
-    border-radius: 2px 0 0 2px;
-    background-color: #2ecc71;
-    transition: .5s;
-}
-
-.skill-title::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 35px;
-    height: 4px;
-    border-radius: 0 2px 2px 0;
-    background-color: #2ecc71;
-    transition: .5s;
-}
 
 .img {
     width: 120px;
@@ -288,32 +227,7 @@ header.sticky {
     border-radius: 150px 0 0 150px;
 }
 
-.skill-title h3 {
-    font-size: 20px;
-    color: black;
-    margin: 0.5rem;
-}
-
-.skill-img {
-    border-radius: 50%;
-    width: 100px;
-    z-index: 2;
-}
-
-
-.project {
-    min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    background: url('../Images/bg-1.jfif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .proj_header {
-    margin-top: 70px;
     text-align: center;
 }
 
@@ -323,14 +237,12 @@ header.sticky {
 }
 
 .card {
-    margin: 10px;
+    margin-top: 40px;
 }
 
 .card img {
     height: 400px;
 }
-
-
 
 .contact_info
 {
@@ -346,6 +258,7 @@ header.sticky {
     padding-left: 32px;
     padding-right: 15px;
     margin-bottom: 25px;
+    margin: 10px;
 }
 .contact_info_image
 {
@@ -371,16 +284,26 @@ header.sticky {
     color: rgba(0,0,0,0.5);
 }
 
-.skills {
-    padding: 100px 15px;
+.contact {
+    padding: 70px 15px;
     background-color: #ffff;
 }
-/* 
-.skills .skills-content {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-right: 40px;
-} */
+
+.projectservices {
+    padding:50px 15px;
+    background-color: #ffff;
+}
+
+.aboutme {
+    padding: 70px 15px;
+    background-color: #ffff;
+}
+
+
+.skills {
+    padding: 70px 15px;
+    background-color: #ffff;
+}
 
 .skills .img {
     flex: 0 0 100%;
@@ -468,6 +391,7 @@ header.sticky {
     animation: sql 1s;
 }
 
+
 @keyframes html {
     0%{
         width: 0%;
@@ -521,42 +445,3 @@ header.sticky {
         width: 85%;
     }
 }
-/* 
-.skillset {
-    width: 500px;
-    margin: 60px;
-}
-
-.skillset li{
-    margin: 20px 0;
-    color: black;
-}
-
-.bar {
-    background: #353b48;
-    display: block;
-    height: 2px;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0 10px #2187e7b3;
-}
-
-.bar span{
-    height: 2px;
-    background: #2187e7;
-}
-
-.html {
-    width: 90%;
-    animation: html 2s;
-}
-
-@keyframes html {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-} */
