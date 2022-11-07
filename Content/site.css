@@ -294,12 +294,6 @@ header.sticky {
     background-color: #ffff;
 }
 
-.aboutme {
-    padding: 70px 15px;
-    background-color: #ffff;
-}
-
-
 .skills {
     padding: 70px 15px;
     background-color: #ffff;
@@ -444,4 +438,56 @@ header.sticky {
     100%{
         width: 85%;
     }
+}
+
+.aboutme {
+    width: 100%;
+    padding: 0px 0px;
+    border-bottom: #db1f96;
+}
+
+.aboutme img {
+    max-width: 100%;
+    width: 840px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1 {
+    color: black;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: black    ;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.aboutme span {
+    color: rgb(237, 66, 149);
+}
+
+.about-text p {
+    color: black;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 40px;
 }
