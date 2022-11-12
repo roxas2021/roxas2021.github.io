@@ -202,7 +202,18 @@ header.sticky {
     .skills .img {
         display: none;
     }
+
+    .aboutme .about-img img {
+        display: none;
+    }
+            
         
+    .aboutme {
+        width: 100%;
+        margin-top: 30px;
+        border-bottom: #db1f96;
+    }
+
 }
 
 
@@ -290,7 +301,6 @@ header.sticky {
 }
 
 .projectservices {
-    padding:50px 15px;
     background-color: #ffff;
 }
 
@@ -446,7 +456,7 @@ header.sticky {
     border-bottom: #db1f96;
 }
 
-.aboutme img {
+.aboutme .about-img img {
     max-width: 100%;
     width: 840px;
     height: auto;
